@@ -33,10 +33,6 @@
                     {!! Form::text('orden',null ,['class'=>'form-control']) !!}
                 </div>
 
-                <div class="form-group">
-                    <label for="categoria_id">ELIJA CATEGORÍA</label>
-                    {!! Form::select('categoria_id',$categorias,null ,['class'=>'form-control']) !!}
-                </div>
 
 
 
