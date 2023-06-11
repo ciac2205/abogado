@@ -33,10 +33,6 @@
                     {!! Form::text('orden',$post->orden,['class'=>'form-control']) !!}
                 </div>
 
-                <div class="form-group">
-                    <label for="categoria_id">ELIJA CATEGORÍA</label>
-                    {!! Form::select('categoria_id',$categorias,$post->categoria_id,['class'=>'form-control']) !!}
-                </div>
 
                 <div class="form-group">
                     <label for="urlfoto">IMAGEN</label> <br>

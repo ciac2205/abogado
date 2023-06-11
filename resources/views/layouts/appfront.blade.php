@@ -10,10 +10,10 @@
     <meta name="description" content="@yield('description', $config->seo_description)">
     <meta property="og:type" content="website" />
     <meta property="og:description" content="@yield('description',  $config->seo_description)" />
-    <meta property="og:url" content="@yield('url','https://artesanias.com')" />
-    <meta property="og:site_name" content="artesanias.com" />
-    <meta property="og:image" content="@yield('image','https://artesanias.com/img/configuracion/'.$config->seo_urlfoto)" />
-    <link rel="canonical" href="@yield('url','https://artesanias.com')" />
+    <meta property="og:url" content="@yield('url','https://bufete.com')" />
+    <meta property="og:site_name" content="bufete.com" />
+    <meta property="og:image" content="@yield('image','https://bufete.com/img/configuracion/'.$config->seo_urlfoto)" />
+    <link rel="canonical" href="@yield('url','https://bufete.com')" />
     <link rel="shortcut icon" href="/img/configuracion/{{$config->urlfavicon}}" type="image/png" />
     <link rel="stylesheet" href="../../../public/css/principal.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -45,7 +45,7 @@
                         <a class="nav-link" href="/empresa" title="QuienesSomos">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/blog" title="Últimas publicaciones">Servicios</a>
+                        <a class="nav-link" href="/servicios" title="Últimas publicaciones">Servicios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/contacto" title="Datos contacto">Contacto</a>
@@ -66,7 +66,7 @@
             <h2>Secciones</h2>
             <a class="nav-link" href="/" title="Portada">Inicio</a>
             <a class="nav-link" href="/empresa" title="QuienesSomos">Quienes Somos</a>
-            <a class="nav-link" href="/blog" title="Últimas publicaciones">Servicios</a>
+            <a class="nav-link" href="/servicios" title="Últimas publicaciones">Servicios</a>
             <a class="nav-link" href="/contacto" title="Datos contacto">Contacto</a>
         </div>
         <div class="footer-link">

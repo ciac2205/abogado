@@ -15,7 +15,7 @@ class FrontController extends Controller
     public function index(){
         $carrusel = Carrusel::orderBy('orden','asc')->get();
         $producto = Producto::orderBy('visitas','desc')->take(3)->get();
-        $posts = Post::orderBy('created_at','desc')->take(2)->get();
+        $posts = Post::orderBy('created_at','desc')->take(50)->get();
         $empresa = Empresa::find(1);
         return view('welcome',compact('carrusel','producto','posts','empresa'));
     }
@@ -54,8 +54,8 @@ class FrontController extends Controller
     }
 
     public function contacto(){
-        $carrusel = Carrusel::orderBy('orden','asc')->get();
-        return view('front.contacto',compact('carrusel'));
+      
+        return view('front.contacto');
     }
 
     public function contactoenvio(Request $r){

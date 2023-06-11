@@ -3,12 +3,12 @@
         <li class="list-group-item">
             <a href="/admin/configuracion">Configuración</a>
         </li>
-        <li class="list-group-item">
+        <!-- <li class="list-group-item">
             <a href="/admin/categoria">Categorias</a>
-        </li>
+        </li> -->
 
         <li class="list-group-item">
-            <a href="/admin/post">Blog</a>
+            <a href="/admin/post">Servicios</a>
         </li>
 
         <li class="list-group-item">

@@ -53,10 +53,10 @@
                     <div class="col-md-6">
                         <div class="about-img">
                             <div class="about-img-1">
-                                <img src="/img/configuracion/welcome1.jpg" alt="Image1">
+                                <img src="/img/empresa/{{$empresa->urlmision}}" alt="Image1">
                             </div>
                             <div class="about-img-2">
-                            <img src="/img/configuracion/welcome4.jpg" alt="Image2">
+                            <img src="img/empresa/{{$empresa->urlvision}}" alt="Image2">
                             </div>
                         </div>
                     </div>
@@ -98,59 +98,29 @@
             </div>
         </div>
         <!-- Fact Start -->
-<!-- artesanias -->
-
+<!-- servicios-->
 <div class="container">
-    <div class="row mt-5 mb-5 justify-content-center text-center align-items-center bg-success">
-        <div class="col-sm-8 bg-light  pt-5 pb-5">
-            <div class="row">
-            <div class="col-sm-12">
-                <h2 class="text-warning">ARTESANÍAS MÁS DEMANDADAS</h2>
-            </div>
-            @forelse ($producto as $item)
-                <div class="col-sm-4">
-                    <div class="card">
-                        <a href="/artesanias/{{$item->categoria->slug}}/{{$item->slug}}">
-                            <img src="/img/producto/{{$item->urlfoto}}" class="card-img-top" alt="{{$item->nombre}}">
-                        </a>
+<div class="section-header">
+            <h2 class="title-servicios" >Servicios</h2>
+        </div>
+    <div class="blog blog-page mt-125" id="contenedor-blog-general">
+                @foreach ($posts as $r)
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="/img/post/{{$r->urlfoto}}" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="blog-content">
+                            <h2 class="blog-title">{{$r->nombre}}</h2>
+                            <div class="blog-text">
+                                <p>
+                                    {{$r->description}}
+                                </p>
+                                <a href="/servicios/{{$r->slug}}" href="">Ver más</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <a href="/artesanias/{{$item->categoria->slug}}/{{$item->slug}}" class="btn btn-warning btn-block">{{$item->nombre}}</a>
-                    </div>
-                </div>
-            @empty
-            @endforelse
+                @endforeach
             </div>
-        </div>
-        <div class="col-sm-4">
-            <p class="display-4 font-anton text-white">CONTACTO <br> {{$config->celular}}</p>
-        </div>
-    </div>
 </div>
-<!-- artesanias /-->
-
-<!-- publicaciones-->
-<div class="container">
-    
-        @forelse ($posts as $r)
-        <div class="row mb-4">
-            <div class="col-sm-4">
-                <img src="/img/post/{{$r->urlfoto}}" alt="{{$r->nombre}}" class="img-fluid rounded-left">
-            </div>
-            <div class="col-sm-8 border rounded-right bg-light row align-items-center">
-                <div class="col-sm-12">
-                    <h3 class="text-danger">{{$r->nombre}}</h3>
-                    <p>{{$r->description}}</p>
-                    <span class="small">{{$r->created_at->diffForHumans()}}</span>
-                </div>
-            </div>
-        </div>
-        @empty
-            
-        @endforelse
-    
-</div>
-<!-- publicaciones/-->
-
-
+<!-- servicios/-->
 @endsection
