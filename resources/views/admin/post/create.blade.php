@@ -10,26 +10,26 @@
 
             <div class="jumbotron">
                 <div class="form-group">
-                    <label for="title">INGRESE TITLE</label>
+                    <label for="title">Ingrese TITLE</label>
                     {!! Form::text('title',null ,['class'=>'form-control','maxlength'=>'67']) !!}
                 </div>
                 <div class="form-group">
-                    <label for="description">INGRESE DESCRIPTION</label>
+                    <label for="description">Ingrese DESCRIPTION</label>
                     {!! Form::textarea('description',null ,['class'=>'form-control','maxlength'=>'155','rows'=>'3']) !!}
                 </div>
 
                 <div class="form-group">
-                    <label for="nombre">INGRESE NOMBRE</label>
+                    <label for="nombre">Ingrese NOMBRE</label>
                     {!! Form::text('nombre',null ,['class'=>'form-control']) !!}
                 </div>
 
                 <div class="form-group">
-                    <label for="descripcion">INGRESE DESCRIPCIÓN</label>
+                    <label for="descripcion">Ingrese DESCRIPCIÓN</label>
                     {!! Form::textarea('descripcion',null ,['class'=>'form-control']) !!}
                 </div>
 
                 <div class="form-group">
-                    <label for="orden">INGRESE ORDEN</label>
+                    <label for="orden">Ingrese ORDEN</label>
                     {!! Form::text('orden',null ,['class'=>'form-control']) !!}
                 </div>
 

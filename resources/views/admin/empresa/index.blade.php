@@ -10,11 +10,11 @@
 
             <div class="jumbotron">
                 <div class="form-group">
-                    <label for="title">INGRESE TITLE</label>
+                    <label for="title">Ingrese TITLE</label>
                     {!! Form::text('title',$empresa->title,['class'=>'form-control','maxlength'=>'67']) !!}
                 </div>
                 <div class="form-group">
-                    <label for="description">INGRESE description</label>
+                    <label for="description">Ingrese description</label>
                     {!! Form::textarea('description',$empresa->description,['class'=>'form-control','maxlength'=>'155','rows'=>'3']) !!}
                 </div>
 

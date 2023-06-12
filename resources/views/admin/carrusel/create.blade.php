@@ -13,17 +13,17 @@
 
 
                 <div class="form-group">
-                    <label for="descripcion">INGRESE DESCRIPCIÓN</label>
+                    <label for="descripcion">Ingrese DESCRIPCIÓN</label>
                     {!! Form::text('descripcion',null ,['class'=>'form-control','maxlength'=>'67']) !!}
                 </div>
 
                 <div class="form-group">
-                    <label for="link">INGRESE LINK</label>
+                    <label for="link">Ingrese LINK</label>
                     {!! Form::text('link',null ,['class'=>'form-control']) !!}
                 </div>
 
                 <div class="form-group">
-                    <label for="orden">INGRESE ORDEN</label>
+                    <label for="orden">Ingrese ORDEN</label>
                     {!! Form::text('orden',null ,['class'=>'form-control']) !!}
                 </div>
 
