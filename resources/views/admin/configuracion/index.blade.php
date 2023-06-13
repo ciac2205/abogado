@@ -65,12 +65,12 @@
                     <div class="form-group row">
 
                         <div class="col-sm-3">
-                            <label for="razonsocial">Razon Social</label>
+                            <label for="razonsocial">Razón Social</label>
                             {!! Form::text('razonsocial',$registro->razonsocial,['class'=>'form-control','maxlength'=>'50']) !!}
                         </div>
                         <div class="col-sm-3">
-                            <label for="direccion">Direccion</label>
-                            {!! Form::text('direccion',$registro->direccion,['class'=>'form-control','maxlength'=>'50']) !!}
+                            <label for="direccion">Dirección</label>
+                            {!! Form::text('direccion',$registro->direccion,['class'=>'form-control','maxlength'=>'200']) !!}
                         </div>
 
                         <div class="col-sm-3">

@@ -20,7 +20,7 @@
                         <td>
                             <a href="{{ route('post.edit',$item->id)}}" class="btn btn-success">EDITAR</a>
                             {!! Form::open(['method'=>'DELETE','route'=>['post.destroy',$item->id],'style'=>'display:inline']) !!}
-                            {!! Form::submit('ELIMINAR',['class'=>'btn btn-success','onclick'=>'return confirm("ESTA SEGURO DE ELIMINAR")']) !!}
+                            {!! Form::submit('ELIMINAR',['class'=>'btn btn-dangerr','onclick'=>'return confirm("ESTA SEGURO DE ELIMINAR")']) !!}
                             {!! Form::close() !!}
                         </td>
                     </tr>

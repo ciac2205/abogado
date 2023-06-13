@@ -85,7 +85,7 @@
 </div>
 <div class="container copyright">
     <div class="container-copy">
-        <p>&copy; Luis Hernandez, All Right Reserved.</p>
+        <p>&copy;All Right Reserved.</p>
     </div>
 </div>
 </div>

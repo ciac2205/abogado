@@ -40,7 +40,7 @@
                 </div>
 
             </div>
-            {!! Form::submit('GUARDAR',['class'=>'btn btn-success']) !!}
+            {!! Form::submit('Guardar',['class'=>'btn btn-success']) !!}
             {!! Form::close() !!}
         </div>
     </div>

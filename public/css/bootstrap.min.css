@@ -1624,6 +1624,7 @@ pre code {
     width: 100%;
     margin-bottom: 1rem;
     color: #212529;
+    margin-top: 10px;
 }
 .table td,
 .table th {
@@ -1634,6 +1635,8 @@ pre code {
 .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;
+    color: #1a5c8d;
+    font-weight: bold;
 }
 .table tbody + tbody {
     border-top: 2px solid #dee2e6;
@@ -2499,11 +2502,13 @@ fieldset:disabled a.btn {
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
+    width: 100px;
 }
 .btn-success:hover {
     color: #fff;
     background-color: #218838;
     border-color: #1e7e34;
+    width: 100px;
 }
 .btn-success.focus,
 .btn-success:focus {
@@ -3195,10 +3200,10 @@ input[type="submit"].btn-block {
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
+    color: white;
     text-align: inherit;
     white-space: nowrap;
-    background-color: transparent;
+    background-color: red;
     border: 0;
 }
 .dropdown-item:focus,
@@ -9823,7 +9828,36 @@ a.text-dark:hover {
     .section-header h2 {
         text-align: center;
     }
+    .form-group.row label {
+        margin: 0 auto;
+    }
+    /* .form-control{
+        width: 80% ;
+        margin: 0 auto;
+    } */
+    #password,
+    #email {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .form-check {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .col-md-8.offset-md-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button.btn.btn-primary {
+        margin: 10px auto;
+    }
+    h1.title-login {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
 }
+
 /*******************************/
 /********** Fact CSS ***********/
 /*******************************/
@@ -10248,7 +10282,7 @@ nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm {
 #contenedor-blog-general {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px 110px;
 }
 .container-post-desglose {
     display: flex;
@@ -10299,28 +10333,136 @@ nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm {
 .container-configuracion-admin {
     padding: 20px;
 }
-.container-logo-admin-configuracion{
+.container-logo-admin-configuracion {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#submenu-admin li a{
-    color:#1a5c8d;
+#submenu-admin li a {
+    color: #1a5c8d;
     text-align: left;
 }
-.container-configuracion-admin label{
-    color:#1a5c8d;
+.container-configuracion-admin label {
+    color: #1a5c8d;
     font-weight: 600;
 }
-.container-configuracion-admin .btn{
+.container-configuracion-admin .btn {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
-#register-text{
+#register-text {
     display: none;
 }
-.form-check-label{
-cursor: pointer;
+.form-check-label {
+    cursor: pointer;
+}
+
+.btn-primary {
+    -webkit-appearance: none;
+    width: auto;
+    min-width: 100px;
+    border-radius: 24px;
+    text-align: center;
+    padding: 15px 40px;
+    margin-top: 5px;
+    background-color: black !important;
+    color: #fff;
+    font-size: 14px;
+    margin-left: auto;
+    font-weight: 500;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.13);
+    border: none;
+    transition: all 0.3s ease;
+    outline: 0;
+    border: none !important;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 6px -1px rgba(182, 157, 230, 0.65);
+}
+
+button:hover:active {
+    transform: scale(0.99);
+}
+
+.container-login-admin {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+
+.container-imagen-login img {
+    width: 350px;
+}
+
+.card-header {
+    display: none;
+}
+.form-group.row {
+    display: flex;
+    align-items: center;
+}
+.form-group label {
+    width: 400px;
+    color: #1a5c8d;
+    font-weight: 600;
+    padding: 0px;
+}
+.form-group.row label {
+    width: 300px;
+    color: #1a5c8d;
+    font-weight: 600;
+    padding: 0px;
+}
+a.btn.btn-link {
+    padding: 0px;
+    padding-top: 10px;
+}
+h1.title-login {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+@media (max-width: 768px) {
+    .container-login-admin {
+        flex-direction: column;
+    }
+    .btn-dangerr {
+        margin-top: 10px;
+    }
+    input[type="file"] {
+        width: 300px;
+    }
+    .jumbotron {
+        margin-top: 25px;
+    }
+    .table td img{
+        width:150px;
+    }
+    .form-group img {
+        width: 200px !important;
+    }
+}
+
+.btn-dangerr {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    width: 100px;
+}
+.btn-dangerr:hover {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    width: 100px;
+}
+.dropdown-menu.dropdown-menu-right.show {
+    background: red;
+    color: white !important;
+}
+.form-group img {
+    width: 600px;
 }

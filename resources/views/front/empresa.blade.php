@@ -40,7 +40,7 @@
                     <img id="img-empresas" src="/img/empresa/{{$empresa->urlhistoria}}" class="img-fluid">
                 </div>
                 <div class="col-sm-8">
-                    <h2 id="subtitle-empresa">RESEÑA HISTÓRICA</h2>
+                    <h2 id="subtitle-empresa">OBJETIVOS</h2>
                     <p id="text-empresa-info"> {!! $empresa->historia !!}</p>
                 </div>
             </div>
@@ -49,7 +49,7 @@
             <div  class="row mt-5 mb-5 align-items-center">
                 
                 <div class="col-sm-8">
-                    <h2 id="subtitle-empresa">VALORES CORPORATIVOS</h2>
+                    <h2 id="subtitle-empresa">VALORES</h2>
                     <p id="text-empresa-info">{!! $empresa->valores !!}</p>
                 </div>
                 <div class="col-sm-4">
