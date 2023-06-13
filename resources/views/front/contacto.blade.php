@@ -16,7 +16,7 @@
                     <div class="col-md-5">
                         <div class="contact-info">
                             <div class="contact-icon">
-                                <i class="fa fa-map-marker-alt"></i>
+                                <i class="fa fa-map-marker"></i>
                             </div>
                             <div class="contact-text">
                                 <h3>Dirección:</h3>
@@ -25,7 +25,7 @@
                         </div>
                         <div class="contact-info">
                             <div class="contact-icon">
-                                <i class="fa fa-phone-alt"></i>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
                             </div>
                             <div class="contact-text">
                                 <h3>Celular:</h3>
